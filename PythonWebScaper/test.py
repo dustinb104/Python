@@ -9,7 +9,7 @@ from selenium import webdriver
 
 # url = "https://www.nba.com/players"
 url = "https://www.nba.com/stats/players/traditional?PerMode=Totals&sort=PTS&dir=-1"
-file_path = r"C:\Users\dusti\Documents\PythonPractice\PythonWebScaper\testResults2"
+file_path = r"C:\Users\dusti\Documents\Programming\Python\PythonWebScaper"
 
 data = re.search(r'({"props":.*})', requests.get(url).text).group(0)
 data = json.loads(data)
